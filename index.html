@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Text Analysis App</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Text Analysis App">
+  <meta name="author" content="Andreas Storz">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Text Analysis App</h1>
+    <h2>Course Project for Coursera - Developing Data Products</h2>
+    <p>Andreas Storz<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Intro</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Text analytics is a rapidly developing field in data science, with tons of (possible) applications.</li>
+<li>But often it is a good idea to just get a basic overview of the text you would like to analyze.</li>
+<li>For this reason I started to develop an app that provides descriptive statistics for text segments. </li>
+<li>This presentation introduces the app, which is still work-in-progress.</li>
+</ul>
+
+<p>To access the app, simply go to <a href="https://andresito.shinyapps.io/textAnalysisShinyApp/">https://andresito.shinyapps.io/textAnalysisShinyApp/</a>.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>The App</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The app is very straightforward and easy to use. All the user needs to do is insert text into a field, either by typing it out or by copy-pasting a segment to be analyzed.</p>
+
+<p>Once the user hits &#39;submit&#39;, the app currently provides calculations for the following statistics:</p>
+
+<ul>
+<li>Total number of characters</li>
+<li>Mean word length</li>
+<li>Median word length</li>
+<li>A table of the 10 most common words in the text</li>
+</ul>
+
+<p>The following page provides an example of the shiny output for the 10 most common words based on the following sample input:</p>
+
+<p>&quot;The death of James Foley in August at the hands of Islamic State jihadists in Syria was a very public end to a hidden ordeal shared with nearly two dozen other Westerners, who were routinely beaten, starved, subjected to waterboarding and sometimes traded for cash, his freed cellmates say.&quot; (Source: New York Times on October 26, 2014)</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Demo</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="assets/fig/unnamed-chunk-1.png" alt="plot of chunk unnamed-chunk-1"> </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Outlook</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Currently, the app is at a very early development stage.  In the future, it might include more complex calculations such as:</p>
+
+<ul>
+<li>the probability of words co-occuring next/close to each other;</li>
+<li>the probability of words occuring at certain positions in the text;</li>
+<li>analysis of the proportion of word types (nouns, verbs, adjectives, ...);</li>
+<li>as well as additional language options, as it is currently limited to English.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Intro'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='The App'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Demo'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Outlook'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
